@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+A Baltimore, Maryland native, I rode into the world of web development on
+the Angular wave in 2015. Soon after realizing Angular is merely
+a Javascript framework and not a verb that solves all problems, I have spent the
+past year cramming about 15 years of "Web 2.0". I primarily have focused on the
+MEAN stack with Gulp as my preferred task builder.

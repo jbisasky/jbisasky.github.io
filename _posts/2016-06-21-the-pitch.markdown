@@ -1,0 +1,94 @@
+---
+layout: post
+title:  "The Pitch"
+date:   2016-06-21 17:23:42 -0400
+categories: Intro
+---
+## The endless itinerary
+Off the top of my head, I have a laundry list of features I want to integrate
+into an application...
+
+* Storyboard designs
+* Prototype designs
+* NodeJS backend using Express
+* Microservice based architecture
+* Message queueing (RabbitMQ?)
+* Frontend framework (Angular 1 or 2, React)
+* JQuery DOM manipulation
+* Gulp taskrunner for Angular 1, SystemJS or Webpack for Angular 2
+* SQLless DB (Rethink or Mongo)
+* Ionic mobile applications
+* Electron desktop application
+* Unit and end-to-end tests
+* Deploy to production (Heroku, AWS?)
+
+To accomplish the above would require at least 3 to 4 unique
+applications. Building the frontend with multiple frameworks is too ambitious.
+But my first problem was thinking of an application that would involve most or
+all of listed items. Tutorials are intentionally limited in scope.
+
+So I started thinking of something that could make my life more convenient.
+Fortunately I was able to think of something that could be solved with a web
+and mobile applications.
+
+## The real life problem
+As someone with a full time job (and a 1 hour daily commute), I have trouble
+finding the time to cook at home. Usually the process involves:
+
+1. I become hungry
+2. Search for a recipe
+3. Compile a grocery list
+4. Pick up the items from the grocery store
+5. Have the time to cook the meal before the ingredients expire
+
+I identified some problems with the process over time:
+
+1. Re-look up recipes I have already cooked
+2. Make multiple grocery store trips when I could make one trip per week
+3. Use of Apple Notes or Evernote as a grocery list can be clunky and clumsy
+4. Purchase an ingredient I already have in my pantry
+5. Forget to purchase an ingredient because I thought it was in my pantry
+6. Let an ingredient expires
+7. Forget to defrost a frozen ingredient
+
+From the process and the problems, I came up with some basic requirements:
+
+1. Unified location to store recipes that can be accessed across devices
+(computer and mobile)
+2. Ability to import recipes from another source (API?, spreadsheet?, photo?)
+3. Ability to scale ingredients depending on servings
+4. List of pantry ingredients separated by category and perishable (with
+  expiration date), non-perishable, frozen
+5. Ability to convert recipes to a grocery list accessible across devices
+(mobile in particular)
+6. Multiple recipes can be combined (or subtracted) from a list. So if two
+recipes need onions, onions are listed only once with the combined quantity
+7. The list should be easy to mark off
+  * An item can be marked as found
+  * An item can be marked as not found
+  * An item can be deleted
+  * A new item can be added
+8. Items marked as found are added to the pantry
+9. A notation next to the item if I already have it in possession in my pantry
+10. A calendar or timeline of when recipes need to be cooked based on planning
+or perishable item expiration (ex. when the ground beef expires)
+11. Ability to export to a 3rd party calendar (i.e. Apple or Google Calendar)
+12. A notification from the app or 3rd party calendar to defrost an ingredient
+13. A notification from the app or 3rd party calendar to cook a meal (based on
+  a planned schedule or due to expiration)
+14. Marking a recipe as complete deducts the ingredients from the pantry
+15. Ability to make notes in the recipe of recipe modifications (ingredients or
+  procedure)
+
+To support my goal of building multiple microservices, the application can
+be spit into multiple apps:
+
+1. Recipe encyclopedia with a recipe schedule
+2. Grocery list
+3. Pantry
+
+To practice using different frontend technologies, each application could be
+built using a different framework (Angular 1, 2, React). In fact it may be
+possible that a different framework may be a better solution for each app.
+The 3 applications can also subsequently be broken down into separate
+microservices.
