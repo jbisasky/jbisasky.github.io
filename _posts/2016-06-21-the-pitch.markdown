@@ -51,6 +51,7 @@ I identified some problems with the process over time:
 6. Let an ingredient expires
 7. Forget to defrost a frozen ingredient
 
+## Requirements
 From the process and the problems, I came up with some basic requirements:
 
 1. Unified location to store recipes that can be accessed across devices
@@ -80,6 +81,7 @@ or perishable item expiration (ex. when the ground beef expires)
 15. Ability to make notes in the recipe of recipe modifications (ingredients or
   procedure)
 
+## Very, very basic architecture
 To support my goal of building multiple microservices, the application can
 be spit into multiple apps:
 
@@ -92,3 +94,9 @@ built using a different framework (Angular 1, 2, React). In fact it may be
 possible that a different framework may be a better solution for each app.
 The 3 applications can also subsequently be broken down into separate
 microservices.
+
+## What's next?
+My next goal is to draw very high level UI/UX designs. Probably starting with
+the simpler grocery list app. Then the pantry app. Finally the recipe app.
+
+In the middle of that, I also need to start work on the backend architecture.
